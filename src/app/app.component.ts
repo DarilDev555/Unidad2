@@ -12,6 +12,7 @@ import { DatepickerInlineCalendarExample } from './componentes/datepicker-inline
 import { DialogOverviewExample } from './componentes/dialog-overview-example/dialog-overview-example.component';
 import { DividerOverviewExample } from './componentes/divider-overview-example/divider-overview-example.component';
 import { ExpansionOverviewExample } from './componentes/expansion-overview-example/expansion-overview-example.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +36,13 @@ import { ExpansionOverviewExample } from './componentes/expansion-overview-examp
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'Unidad2';
+  
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.router.navigate(['/inicio-sesion']);
+  }
 }

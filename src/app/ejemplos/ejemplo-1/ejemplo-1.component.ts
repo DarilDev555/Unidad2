@@ -81,7 +81,7 @@ export class Ejemplo1Component {
 }
 
   @Component({
-  selector: 'dialog-overview-example-dialog',
+  selector: 'dialog-overview-example-dialog-2',
   templateUrl: 'dialog-overview-example-dialog.html',
   standalone: true,
   imports: [
